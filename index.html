@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Note</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <a href="#" class="brand">Death Note</a>
+        <nav>
+            <a href="#" class="on">Home</a>
+            <a href="#">Series</a>
+            <a href="#">Characters</a>
+            <a href="#">Notebook</a>
+            <a href="#">My List</a>
+        </nav>
+        <div class="nav-right">
+            <button aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+            <button aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 1112 0v6l2 2H4z"/><path d="M10 21h4"/></svg></button>
+            <span class="avatar" id="avatar" role="img" aria-label="Profile"></span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="stage">
+            <div class="zoom">
+                <img src="deathNoteShinigami.jpg" alt="Ryuk grinning over Light Yagami as he reads the notebook">
+                <i class="eye" style="--x:21.2%;--y:25.5%;--s:11%"></i>
+                <i class="eye" style="--x:40.5%;--y:16.9%;--s:11%"></i>
+                <i class="eye soft" style="--x:69.8%;--y:30%;--s:5%"></i>
+                <i class="eye soft" style="--x:83%;--y:37.7%;--s:7%"></i>
+            </div>
+        </div>
+        <canvas id="embers"></canvas>
+        <div class="spot"></div>
+        <div class="shade"></div>
+        <div class="grain"></div>
+
+        <div class="hero-copy">
+            <div class="series r" style="--d:2.1s"><span class="mark"></span>Series</div>
+            <h1 id="title">Death Note</h1>
+            <div class="rank r" style="--d:2.3s"><b>TOP 10</b> #1 in Series Today</div>
+            <p class="synopsis r" style="--d:2.4s">A top student finds a black notebook dropped by a bored shinigami. Used once, it can never be un-used. Now a god is watching, and a detective with no name is closing in.</p>
+            <div class="meta r" style="--d:2.5s">
+                <span class="match">98% Match</span><span>2006</span><span class="box">TV-14</span><span>37 Episodes</span><span class="box">HD</span>
+            </div>
+            <div class="cta r" style="--d:2.65s">
+                <button class="btn play"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>Play</button>
+                <button class="btn info"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>More Info</button>
+            </div>
+        </div>
+        <div class="maturity r" style="--d:2.8s">TV-14</div>
+    </section>
+
+    <!-- ROWS -->
+    <main class="rows">
+        <section class="row"><h2>Top 10 Episodes This Week</h2><div class="rail t10" id="top10"></div></section>
+        <section class="row"><h2>Continue Watching for You</h2><div class="rail" id="continue"></div></section>
+        <section class="row"><h2>Trending Now</h2><div class="rail" id="trending"></div></section>
+    </main>
+
+    <footer class="foot">
+        <p>Questions? Call 000-800-000-0000</p>
+        <p>This is a fan-made design concept. Death Note belongs to its creators and rights holders.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
